@@ -22,6 +22,4 @@ test-results/
 
 # macOS
 .DS_Store
-
-# IDE
-.idea/
+!/.idea/
