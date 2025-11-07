@@ -7,7 +7,7 @@
   <a href="https://www.npmjs.com/package/pdf-render-kit"><img alt="npm downloads" src="https://img.shields.io/npm/dm/pdf-render-kit?logo=npm"></a>
   <a href="https://github.com/sur-ser/pdf-render-kit"><img alt="GitHub stars" src="https://img.shields.io/github/stars/sur-ser/pdf-render-kit?style=social"></a>
   <a href="https://github.com/sur-ser/pdf-render-kit/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/sur-ser/pdf-render-kit?logo=github"></a>
-  <a href="https://github.com/sur-ser/symmorph-cli"><img alt="Symmorph CLI" src="https://img.shields.io/badge/Symmorph%20CLI-Repo-6f42c1?logo=github"></a>
+  <a href="https://github.com/sur-ser/pdf-render-kit"><img alt="GitHub repo" src="https://img.shields.io/badge/Repo-pdf--render--kit-6f42c1?logo=github"></a>
   <a href="#license"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-blue.svg"></a>
 </p>
 
@@ -21,7 +21,7 @@ Waits for **images, webfonts, lazy content**, supports **multiple sources** (aut
 - **npm**: https://www.npmjs.com/package/pdf-render-kit  
 - **GitHub repo**: https://github.com/sur-ser/pdf-render-kit  
 - **Issues**: https://github.com/sur-ser/pdf-render-kit/issues  
-- **Symmorph CLI**: https://github.com/sur-ser/symmorph-cli
+- **Repository**: https://github.com/sur-ser/pdf-render-kit
 
 ---
 
