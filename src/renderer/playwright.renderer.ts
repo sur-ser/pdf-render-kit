@@ -79,6 +79,10 @@ export class PlaywrightRenderer {
                 await page.emulateMedia({ media: opts.emulateMedia });
             }
 
+            const enableHF = !!opts.displayHeaderFooter
+            const headerTpl = enableHF ? ((opts.headerTemplate ?? '').trim() || '<div></div>') : undefined;
+            const footerTpl = enableHF ? ((opts.footerTemplate ?? '').trim() || '<div></div>') : undefined;
+
             // buffer only, no writing to disk
             const pdfBuffer = await page.pdf({
                 printBackground: !!opts.printBackground,
@@ -89,8 +93,8 @@ export class PlaywrightRenderer {
                 margin: opts.margin,
                 preferCSSPageSize: true,
                 displayHeaderFooter: !!opts.displayHeaderFooter,
-                headerTemplate: opts.headerTemplate,
-                footerTemplate: opts.footerTemplate,
+                headerTemplate: headerTpl,
+                footerTemplate: footerTpl,
             });
 
             return pdfBuffer;
