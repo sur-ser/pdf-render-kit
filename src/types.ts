@@ -16,6 +16,13 @@ export type PdfSingleOptions = {
     emulateMedia?: 'screen' | 'print';
     viewport?: { width: number; height: number; deviceScaleFactor?: number };
 
+    /** Enable Chromium's print-time header/footer mechanism */
+    displayHeaderFooter?: boolean;
+    /** Raw HTML for the print header (inline-styled; external CSS not supported) */
+    headerTemplate?: string;
+    /** Raw HTML for the print footer (inline-styled; external CSS not supported) */
+    footerTemplate?: string;
+
     /** Wait until: 'networkidle' is usually the best choice */
     waitUntil?: 'load' | 'domcontentloaded' | 'networkidle';
     /** Selectors to wait for on the page */

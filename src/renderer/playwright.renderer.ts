@@ -87,7 +87,10 @@ export class PlaywrightRenderer {
                 width: opts.width,
                 height: opts.height,
                 margin: opts.margin,
-                preferCSSPageSize: true
+                preferCSSPageSize: true,
+                displayHeaderFooter: !!opts.displayHeaderFooter,
+                headerTemplate: opts.headerTemplate,
+                footerTemplate: opts.footerTemplate,
             });
 
             return pdfBuffer;

@@ -16,20 +16,20 @@ import { PdfRenderService, type Source } from '../src';
     });
 
     // the first task arrived
-    service.enqueueLocal({
-        sources: [{ url: 'https://freetownow-device-router.sursersur.workers.dev/' }],
-        outputPath: './out/1.pdf',
-        retry: { maxAttempts: 3, backoffMs: 1500 }
-    });
+    // service.enqueueLocal({
+    //     sources: [{ url: 'https://freetownow-device-router.sursersur.workers.dev/' }],
+    //     outputPath: './out/1.pdf',
+    //     retry: { maxAttempts: 3, backoffMs: 1500 }
+    // });
+    //
+    // // the next one arrived — just add it
+    // service.enqueueLocal({
+    //     sources: [{ url: 'https://exanak.am' }],
+    //     outputPath: './out/2.pdf'
+    // });
 
-    // the next one arrived — just add it
     service.enqueueLocal({
-        sources: [{ url: 'https://exanak.am' }],
-        outputPath: './out/2.pdf'
-    });
-
-    service.enqueueLocal({
-        sources: [{ url: 'https://list.am' }],
+        sources: [{ url: 'https://example.com' }],
         outputPath: './out/3.pdf'
     });
 

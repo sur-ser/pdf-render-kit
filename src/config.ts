@@ -10,7 +10,10 @@ export const defaultConfig: Required<LibraryConfig> = {
         scale: 1,
         timeoutMs: 60_000,
         settleMs: 800,
-        margin: { top: '10mm', right: '10mm', bottom: '10mm', left: '10mm' }
+        margin: { top: '10mm', right: '10mm', bottom: '10mm', left: '10mm' },
+        displayHeaderFooter: false,
+        headerTemplate: '',
+        footerTemplate: '',
     },
     optimizer: {
         enabled: false,
