@@ -3,22 +3,17 @@
   "version": "0.1.7",
   "description": "Library for rendering PDF from URL/HTML with local queue, retries, and post-optimization.",
   "type": "module",
-  "main": "./dist/src/index.js",
-  "types": "./dist/src/index.d.ts",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "types": "./dist/src/index.d.ts",
-      "import": "./dist/src/index.js",
-      "default": "./dist/src/index.js"
-    },
-    "./*": {
-      "types": "./dist/src/*",
-      "import": "./dist/src/*",
-      "default": "./dist/src/*"
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
     }
   },
   "files": [
-    "dist/src",
+    "dist",
     "README.MD",
     "LICENSE"
   ],
@@ -46,7 +41,7 @@
   },
   "sideEffects": false,
   "scripts": {
-    "build": "tsc -p tsconfig.json",
+    "build": "tsup",
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
@@ -55,6 +50,7 @@
   },
   "devDependencies": {
     "ts-node": "^10.9.2",
+    "tsup": "^8.5.1",
     "typescript": "^5.6.3"
   },
   "publishConfig": {
