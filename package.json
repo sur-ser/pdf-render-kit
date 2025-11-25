@@ -1,6 +1,6 @@
 {
   "name": "pdf-render-kit",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "Library for rendering PDF from URL/HTML with local queue, retries, and post-optimization.",
   "type": "module",
   "main": "./dist/index.js",
